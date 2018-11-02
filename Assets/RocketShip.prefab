@@ -487,13 +487,13 @@ Rigidbody:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1845789904093620}
   serializedVersion: 2
-  m_Mass: 0.08
-  m_Drag: 0
+  m_Mass: 1
+  m_Drag: 0.2
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 56
   m_CollisionDetection: 0
 --- !u!65 &65238275389379132
 BoxCollider:
@@ -516,10 +516,10 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
+  m_audioClip: {fileID: 8300000, guid: b1c03cefa3fbdb44daf9e0de7747dac7, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.05
+  m_Pitch: 0.93
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -556,7 +556,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 2
       time: 0
-      value: 0
+      value: 0.391
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -574,7 +574,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -598,7 +598,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dac56b298f0ed884eab35285574c0b74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  multiplier: 150
+  rcsThrust: 150
+  mainThrust: 150
 --- !u!136 &136562871139308838
 CapsuleCollider:
   m_ObjectHideFlags: 1
